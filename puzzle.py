@@ -2,10 +2,7 @@ from collections import deque
 import random
 cells = (["M"]*39 + ["X"]*9 + ["S"] + ["G"] + ["D"]*3 + ["."]*91)
 random.shuffle(cells)
-# print(cells)
 grid = [cells[i:i+12] for i in range (0,144,12)]
-score = 28
-# print(grid)
 
 def print_grid():
     for row in grid:
